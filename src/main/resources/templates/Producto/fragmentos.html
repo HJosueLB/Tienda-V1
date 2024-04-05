@@ -55,8 +55,8 @@
 
                                 <div class="mb-3">
                                     <label for="categoria">[[#{producto.categoria}]]</label>
-                                    <select class="form-select" aria-label="Default select example" name ="idCategoria" required="true">
-                                        <option th:each="categoria : ${categorias}" th:value="${categoria.idCategoria}">[[${categoria.descripcion}]]</option>
+                                    <select class="form-select" aria-label="Default select example" name ="categoria" required="true">
+                                        <option th:each="categoria : ${categorias}" th:value="${categoria.categoria}">[[${categoria.descripcion}]]</option>
                                     </select>
                                 </div>
 
@@ -167,8 +167,8 @@
                                             <div class="card-body">
                                                 <div class="mb-3">
                                                     <label for="categoria">[[#{producto.categoria}]]</label>
-                                                    <select class="form-select" aria-label="Default select example" th:field="*{idCategoria}" name="idCategoria" required="true">                                        
-                                                        <option th:each="categoria : ${categorias}" th:value="${categoria.idCategoria}">[[${categoria.descripcion}]]</option>
+                                                    <select class="form-select" aria-label="Default select example" th:field="categoria" name="categoria" required="true">                                        
+                                                        <option th:each="categoria : ${categorias}" th:value="${categoria.categoria}">[[${categoria.descripcion}]]</option>
                                                     </select>
                                                 </div> 
                                                 <div class="mb-3">
